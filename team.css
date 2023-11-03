@@ -1,0 +1,486 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family:'Montserrat', sans-serif;
+}
+
+.nav-bar{
+    height: 58px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 12px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px px gray;
+
+}
+.airg-logo{
+    width: 40px;
+    height: 40px;
+    background-image: url("misc_images/NSUTAI-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 7px;
+
+}
+.airg-new{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 7px;
+    padding-left: 8px;
+}
+
+.space{
+    width: 1000px;
+    height: 40px;
+}
+
+
+.Home-button{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.Home-button:hover{
+    color: #EA2E5D;
+    border-bottom: 2px solid #EA2E5D;
+    transition: smooth;
+}
+
+
+.Team-button{
+    text-decoration: none;
+    border-bottom: 2px solid #EA2E5D;
+    color: #EA2E5D;
+    padding-bottom: 5px;
+    margin: 20px;
+    color: #EA2E5D;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 200;
+
+}
+
+
+#Our-Team{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 66px 142px 20px 142px;
+}
+
+.heading{
+    font-family:"Montserrat", sans-serif ;
+    font-size: 40px;
+    padding-bottom: 32px;
+}
+
+.Our-Team-content1, .Our-Team-content2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+
+
+.Our-Team-content1{
+    padding-bottom: 25px;
+}
+
+.red{
+    color: #ea2e5d;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 100;
+}
+
+.buttons{
+    height: 90px;
+    width: 1139px;
+    padding-left: 142px;
+    padding-right: 142px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+}
+
+.button1{
+    width: 300px;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+    background-color: #ea2e5d;
+}
+
+
+
+.button2, .button3{
+    width: 300px;
+    height: 40px;
+    border: 2px solid #ea2e5d;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    color: #ea2e5d;
+}
+
+.button2:hover,.button3:hover{
+    background-color: #ea2e5d;
+    color: black;
+}
+
+#core, #Advisory{
+    padding: 50px 142px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#coremembers, #Advisory-Board{
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 32px;
+}
+
+#coregrid, #Advisory-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+.MainBox {
+    position: relative;
+    width: 290px;
+    height: 350px; 
+    padding: 30px; /* Or any size you prefer */
+}
+
+
+.Box{
+    width: 290px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ea2e5d;
+    padding: 30px;
+}
+
+.Box-overlay{
+    width:290px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  #ea2e5d;
+    border: #ea2e5d 2px;
+    padding: 30px;
+}
+
+
+.Box-overlay, .Box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;  /* Smooth transition */
+}
+
+.Box {
+    background-color: black;  /* Some background for visibility */
+}
+
+.Box-overlay {
+    opacity: 0;
+    background-color: #ea2e5d;   /* Some background for visibility */
+    color: white;
+}
+
+.MainBox:hover .Box {
+    opacity: 0.3;  /* Make original div slightly visible on hover */
+}
+
+.MainBox:hover .Box-overlay {
+    opacity: 0.95;
+}
+
+
+.prezi-image{
+    background-image: url("members/President\ Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vice-prez1-image{
+    background-image: url("members/Vice-President\ 1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.vice-prez2-image{
+    background-image: url("members/Vice-President\ 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.director-image{
+    background-image: url("members/Director.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name{
+    padding-top: 25px;
+    padding-bottom: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.position{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    color: #ea2e5d;
+}
+
+.Achievements{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.Social{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Linked-in{
+    background-image: url("misc_images/linkedin-icon-png-transparent-background-8-300x300.png");
+    height: 36px;
+    width: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    padding-right: 10px;
+}
+
+.github{
+    background-image: url("misc_images/Github-logo.png");
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10px;
+}
+
+
+.Mem1{
+    background-image: url("members/Amisha\ Bhaskar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Mem2{
+    background-image: url("members/Dhruv\ Mallick.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Mem3{
+    background-image: url("members/Lohit\ Malik.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Mem4{
+    background-image: url("members/Roshan\ Shankar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Mem5{
+    background-image: url("members/Yugal\ Raj\ Jain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.footer{
+    background-color: black;
+    height: 158px;
+    width: 1279px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 72px;
+    padding-right: 72px;
+    float: left;
+}
+
+.Quick-Links{
+    width: 170px;
+    height: 118px;
+}
+
+.QuickLinks{
+    font: 28px "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+.Home, .Team{
+    width: 165px;
+    height: 30px;
+    padding-top: 7px;
+    font: 20px "Montserrat", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.Socials{
+    width: 137px;
+    height: 118px;
+}
+
+.Follow-Us{
+    font: 28px "Montserrat", sans-serif;
+}
+
+.identity{
+    width: 170px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.soc-name{
+    font: 28px "Montserrat", sans-serif;
+    color: white;
+    border-bottom: 0px;
+    text-decoration: none;
+}
+
+.soc-logo{
+    background-image: url("misc_images/NSUTAI-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-left: 45px;
+}
+
+.insta-button{
+    background-image: url("https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-lighting-and-furniture-design-studio-aqua-creations-32.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    padding-right: 20px;
+}
+
+.media-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.linkedin-button{
+    background-image: url("misc_images/linkedin-icon-png-transparent-background-8-300x300.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    padding-left: 7px;
+}

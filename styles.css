@@ -1,0 +1,389 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-bar{
+    height: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 12px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0px 0px 2px gray;
+
+}
+.airg-logo{
+    width: 40px;
+    height: 40px;
+    background-image: url("misc_images/NSUTAI-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 7px;
+
+}
+.airg-newname{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 7px;
+    padding-left: 8px;
+
+}
+
+.space{
+    width: 1000px;
+    height: 40px;
+}
+
+.Home-button{
+    text-decoration: none;
+    border-bottom: 2px solid #EA2E5D;
+    color: #EA2E5D;
+    padding-bottom: 5px;
+    margin: 20px;
+    color: #EA2E5D;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 200;
+
+}
+
+.Team-button{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.Team-button:hover{
+    color: #EA2E5D;
+    border-bottom: 2px solid #EA2E5D;
+}
+
+
+.hero{
+    background-image: url("https://media.giphy.com/media/Ud5C7vm0j2jIdSXoH0/giphy-downsized-large.gif");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AI{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75em;
+    font-weight: 500;
+}
+.RS{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75em;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.red{
+    color: #EA2E5D;
+}
+
+.college-name{
+    font-size: 1.75em;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+
+.intel-backed{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.intel{
+    background-image: url("misc_images/intel-logo.svg");
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+}
+
+#About-Us{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 70px 142px 100px 142px;
+    background-color: black;
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 1000px;
+}
+
+.heading{
+    font-family: 40px 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+    padding-bottom: 25px;
+}
+
+.About-us-content{
+    font-family: 20px 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 835px;
+}
+
+
+.About-us-logo{
+    background-image: url("misc_images/NSUTAI-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+}
+
+.featured-projects{
+    width: 1423px;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding-bottom: 50px;
+
+}
+
+.FP-heading{
+    font-family: 40px 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+    padding-left: 142px;
+    color: white;
+    padding-top: 61px;
+    padding-bottom: 29px;
+
+}
+
+.FP-content{
+    height: auto;
+    width: 1139px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 20px 142px;
+    
+}
+
+.box{
+    width: 366px;
+    height: fit-content;
+    border: 0.5px solid #EA2E5D;
+    box-shadow: 0px 0px 50px #23060d;
+    background-color: black;
+    position: relative;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.layer{
+    background-color: #EA2E5D;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.layer:hover{
+    opacity: 0.4;
+}
+
+
+.image-container {
+    position: relative;
+    height: 249.5px;
+}
+
+.box-image {
+    position: absolute;
+    width: 366px;
+    height: 249px;
+    border-bottom: 0.5px solid #EA2E5D;
+}
+
+.redirect {
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    opacity: 0;
+}
+
+.box:hover .redirect{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.box-content{
+    width: 302px;
+    padding: 30px 32px;
+    height: fit-content;
+}
+
+
+.box-head{
+    width: 302px;
+    font: "Montserrat", sans-serif;
+    font-size: 30px;
+    --max-lines:3;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+}
+
+.box:hover .box-head{
+    --max-lines:5;
+    -webkit-line-clamp: var(--max-lines);
+}
+.padding{
+    height: 20px;
+    width: 302px;
+}
+
+
+.box-text{
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+    width: 302px;
+    --max-lines:9;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+
+}
+
+.box:hover .box-text{
+    --max-lines:20;
+    -webkit-line-clamp: var(--max-lines);
+}
+
+.footer{
+    background-color: black;
+    height: 158px;
+    width: 1279px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 72px 0px 72px;
+}
+
+.Quick-Links{
+    width: 170px;
+    height: 118px;
+}
+
+.QuickLinks{
+    font: 28px "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+.Home, .Team{
+    width: 165px;
+    height: 30px;
+    padding-top: 7px;
+    font: 20px "Montserrat", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.Socials{
+    width: 137px;
+    height: 118px;
+}
+
+.Follow-Us{
+    font: 28px "Montserrat", sans-serif;
+}
+
+.identity{
+    width: 170px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.soc-name{
+    font: 28px "Montserrat", sans-serif;
+    color: white;
+    border-bottom: 0px;
+    text-decoration: none;
+}
+
+.soc-logo{
+    background-image: url("misc_images/NSUTAI-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-left: 45px;
+}
+
+.insta-button{
+    background-image: url("https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-lighting-and-furniture-design-studio-aqua-creations-32.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    padding-right: 20px;
+}
+
+.media-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.linkedin-button{
+    background-image: url("misc_images/linkedin-icon-png-transparent-background-8-300x300.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    padding-left: 7px;
+}
+
+
+
