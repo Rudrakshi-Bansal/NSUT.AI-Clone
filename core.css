@@ -6,20 +6,30 @@
 }
 
 .nav-bar{
-    height: 58px;
-    width: auto;
+    box-sizing: border-box;
+    height: (58px/2068.5px)*100%;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 60px;
     padding-top: 12px;
+    padding-right: 60px;
     background-color: black;
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 100;
-    box-shadow: 0px 0px px gray;
+    z-index: 10000;
+    box-shadow: 0px 0px 2px gray;
 
 }
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .airg-logo{
     width: 40px;
     height: 40px;
@@ -29,19 +39,15 @@
     padding-top: 7px;
 
 }
-.airg-new{
+.airg-newname{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     padding-bottom: 7px;
     padding-left: 8px;
 }
 
-.space{
-    width: 1000px;
-    height: 40px;
-}
 
 .Home-button{
     text-decoration: none;
@@ -58,6 +64,7 @@
     transition: smooth;
 }
 
+
 .Team-button{
     text-decoration: none;
     border-bottom: 2px solid #EA2E5D;
@@ -71,13 +78,14 @@
 
 }
 
+
 #Our-Team{
     height: 270px;
     display: flex;
     flex-direction: column;
     background-color: rgb(20, 20, 20);
     color: white;
-    padding: 66px 142px 20px 142px;
+    padding: 166px 9.9vw 20px 9.9vw;
 }
 
 .heading{
@@ -93,6 +101,7 @@
     letter-spacing: normal;
 }
 
+
 .Our-Team-content1{
     padding-bottom: 25px;
 }
@@ -102,16 +111,16 @@
     font-weight: 500;
 }
 
-
 .bold{
     font-weight: 100;
 }
 
 .buttons{
+    box-sizing: border-box;
     height: 90px;
-    width: 1139px;
-    padding-left: 142px;
-    padding-right: 142px;
+    width: 100%;
+    padding-left: 9.9vw;
+    padding-right: 9.9vw;
     display: flex;
     justify-content: space-between;
     background-color: rgb(20, 20, 20);
@@ -119,7 +128,7 @@
 }
 
 .button2{
-    width: 300px;
+    width: 21vw;
     height: 40px;
     font-size: 19px;
     font-weight: 400;
@@ -134,7 +143,7 @@
 
 
 .button1, .button3{
-    width: 300px;
+    width: 21vw;
     height: 40px;
     border: 2px solid #ea2e5d;
     font-size: 19px;
@@ -152,20 +161,38 @@
 }
 
 #core{
-    padding: 50px 142px;
+    padding: 50px 9.9vw;
     background-color: rgb(20, 20, 20);
     color: white;
 }
 
 #coremembers{
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
     padding-bottom: 32px;
 }
 
+#coregrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 30px;
+    gap: 30px;
+}
+
+
+.MainBox {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 430px;
+    padding: 30px; /* Or any size you prefer */
+}
+
+
 .Box{
-    width: 290px;
-    height: 350px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,8 +201,9 @@
 }
 
 .Box-overlay{
-    width:290px;
-    height: 350px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,40 +212,31 @@
     padding: 30px;
 }
 
-.Achievements{
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: 300;
+
+.Box-overlay, .Box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;  /* Smooth transition */
+}
+
+.Box {
+    background-color: black;  /* Some background for visibility */
+}
+
+.Box-overlay {
+    opacity: 0;
+    background-color: #ea2e5d;   /* Some background for visibility */
     color: white;
 }
 
-.Social{
-    height: 50px;
-    width: 300px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.MainBox:hover .Box {
+    opacity: 0.3;  /* Make original div slightly visible on hover */
 }
 
-.Linked-in{
-    background-image: url("misc_images/linkedin-icon-png-transparent-background-8-300x300.png");
-    height: 36px;
-    width: 36px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: black;
-    padding-right: 10px;
+.MainBox:hover .Box-overlay {
+    opacity: 0.95;
 }
-
-.github{
-    background-image: url("misc_images/Github-logo.png");
-    height: 35px;
-    width: 35px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 10px;
-}
-
 
 
 .prezi-image{
@@ -287,56 +306,51 @@
     color: #ea2e5d;
 }
 
-#coregrid, #Advisory-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px;
-}
-
-.MainBox {
-    position: relative;
-    width: 290px;
-    height: 350px; 
-    padding: 30px; /* Or any size you prefer */
-}
-
-.Box-overlay, .Box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s;  /* Smooth transition */
-}
-
-.Box {
-    background-color: black;  /* Some background for visibility */
-}
-
-.Box-overlay {
-    opacity: 0;
-    background-color: #ea2e5d;   /* Some background for visibility */
+.Achievements{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300;
     color: white;
+    text-align: center;
 }
 
-.MainBox:hover .Box {
-    opacity: 0.3;  /* Make original div slightly visible on hover */
+.Social{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.MainBox:hover .Box-overlay {
-    opacity: 0.95;
+.Linked-in{
+    background-image: url("misc_images/linkedin-icon-png-transparent-background-8-300x300.png");
+    height: 36px;
+    width: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    padding-right: 10px;
+}
+
+.github{
+    background-image: url("misc_images/Github-logo.png");
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10px;
 }
 
 
 .footer{
     background-color: black;
-    height: 158px;
-    width: 1279px;
+    height: 17%;
+    width: 100%;
+    box-sizing: border-box;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding: 40px 72px 40px 72px;
 }
 
 .Quick-Links{
